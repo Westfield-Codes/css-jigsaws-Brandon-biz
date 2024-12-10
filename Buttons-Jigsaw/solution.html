@@ -15,7 +15,8 @@
       padding: 18px 22px;
       text-align: center;
       font-size: 15px;
-      border-radius:12px
+      border-radius:12px;
+      cursor: pointer;
     }
     .button:hover {
       background-color: #008CBA;
@@ -30,12 +31,31 @@
       padding: 14px 30px;
       text-align: center;
       font-size: 12px;
+      cursor: pointer;
     }
     .button2:hover span {
       padding-right: 25px;
     }
     .button2:hover {
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button2 span:after{
+      content:"\00bb";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    .button2 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    .button2:hover span:after {
+      opacity: 1;
+      right: 0;
     }
 
 
@@ -48,6 +68,7 @@
       font-size: 19px;
       border-radius:10px;
       box-shadow: 0px 8px 1px #919191;
+      cursor: pointer;
     }
     .button3:hover {
       background-color: #3e8e41
