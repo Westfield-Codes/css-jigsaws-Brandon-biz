@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <meta charset = "utf-8">
   <meta name = "viewport" content = "widol = device-widol">
@@ -8,31 +9,60 @@
   <link href = "style.css" rel = "stylesheet" type = "text/css" />
   <link href = "../style.css" rel = "stylesheet" type = "text/css" />
    <style>
-
-    /* Add these styles in order */
-     
     /* Center the title "High Factor Times Tables */
-
+h2{
+  text-align: center;
+}
     /* Left-align each of the equations */
-
+li{
+  text-align: left;
+}
     /* Display each table in a row with inline-block */
-    
+#tables li{
+  display:inline-block;
+}
     /* Put a rounded 2px black border box around all tables */
-    
+#tables ol{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}  
     /* underline the top numbers red */
-    
+h4{
+  border-bottom: 1px solid red;
+}    
     /* go night mode on hovers over each timestable, but not the parent  */
-  
+#tables ol:hover{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
     /* 20 px space below the last equation in each table */
-
+#tables ol{
+  padding-bottom: 20px;
+}
     /* add a top margin of 20px on each table, but not the parent */
-
+#tables ol{
+  margin-top: 20px;
+}
      /* subtract 20px from left margins of each child table, add it to the right margins */
-
+#tables{
+  margin-left: -20px;
+  margin-right: 20px;
+}
     /* put 25px padding at the bottom of the parent  */
-
+#tables ol{
+  padding-bottom: 25px;
+}
+#timestables{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+#tables{
+  text-align: center;
+}
    </style>
 </head>
+
 
 <body>
   <div id = "project">
@@ -58,7 +88,7 @@
           <li>7 X 12 = 84</li>
         </ol>
       </li>
-      <li> 
+      <li>
           <ol>
             <li><h4>8</h4>
             <li>8 X 7 = 56</li>
@@ -101,7 +131,7 @@
         <li>11 X 11 = 121</li>
         <li>11 X 12 = 132</li>
         </ol>
-      </li> 
+      </li>
       <li>
         <ol>
           <li><h4>12</h4>
@@ -112,7 +142,7 @@
           <li>12 X 11 = 132</li>
           <li>12 X 12 = 144</li>
         </ol>
-      </li> 
+      </li>
     </ol>
   </div>
 </body>
